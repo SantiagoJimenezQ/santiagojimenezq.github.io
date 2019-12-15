@@ -26,3 +26,12 @@
   height: 10px;
 }
 
+#ButtonLogo {
+  border-color: rgba(255,255,255,0);
+  background-color: rgba(255,255,255,0);
+}
+
+.border-light {
+  border-color: rgba(255,255,255,0);
+}
+
