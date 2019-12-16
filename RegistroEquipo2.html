@@ -19,8 +19,8 @@
 
 <body>
     <div class="border rounded border-success login-clean" style="background-color: rgb(255,255,255);">
-        <form class="border rounded border-success" method="post">
-            <div class="illustration"><a class="btn btn-primary" role="button" style="background-color: rgba(244,71,107,0);" href="Homepage.html"><img class="img-fluid" src="assets/img/Logo.png" style="width: 107px;"></a></div>
+        <form class="border rounded border-success" method="post" action="RegistroEquipo3.html">
+            <div class="illustration"><a class="btn btn-primary" role="button" style="background-color: rgba(244,71,107,0);" href="Homepage.html"><img class="img-fluid" src="assets/img/Logo.png" style="width: 107px;" alt="Logo SuperChef"></a></div>
             <div class="steps-progressbar">
                 <ul>
                     <li class="active">Equipo</li>
@@ -31,12 +31,12 @@
             <div class="form-group">
                 <h5>Datos del administrador:</h5>
             </div>
-            <div class="form-group"><label>Nombre:</label><input class="form-control" type="text" placeholder="Ferran"></div>
-            <div class="form-group"><label>Apellidos:</label><input class="form-control" type="text" placeholder="Adrià"></div>
-            <div class="form-group"><label>DNI:</label><input class="form-control" type="text" placeholder="12345678X"></div>
-            <div class="form-group"><label>Fecha de nacimiento:</label><input class="form-control" type="date"></div>
-            <div class="form-group"><label>Domicilio:</label><input class="form-control" type="text" placeholder="Calle Sartén Nº10 3ºF, Murcia"></div>
-            <div class="form-group"><a class="btn btn-primary btn-block" role="button" href="RegistroEquipo3.html" style="background-color: rgb(65,136,53);">Siguiente</a></div><a class="forgot" href="Login.html"><span style="text-decoration: underline;">Cancelar</span></a></form>
+            <div class="form-group"><label>Nombre:</label><input class="form-control" type="text" placeholder="Ferran" required="" minlength="2" maxlength="20"></div>
+            <div class="form-group"><label>Apellidos:</label><input class="form-control" type="text" placeholder="Adrià" required="" minlength="2" maxlength="20"></div>
+            <div class="form-group"><label>DNI:</label><input class="form-control" type="text" placeholder="12345678X" maxlength="9" pattern="^[0-9]+[A-Z]$" minlength="9" required=""></div>
+            <div class="form-group"><label>Fecha de nacimiento:</label><input class="form-control" type="date" required=""></div>
+            <div class="form-group"><label>Domicilio:</label><input class="form-control" type="text" placeholder="Calle Sartén Nº10 3ºF, Murcia" required="" minlength="2" maxlength="60"></div>
+            <div class="form-group"><button class="btn btn-primary btn-block" type="submit" style="background-color: rgb(65,136,53);">Siguiente</button></div><a class="forgot" href="Login.html"><span style="text-decoration: underline;">Cancelar</span></a></form>
     </div>
     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/bootstrap/js/bootstrap.min.js"></script>
